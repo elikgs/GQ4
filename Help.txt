@@ -1,0 +1,5 @@
+﻿
+
+C:\Projects\GQ4>jarsigner -verbose -keystore "C:\Users\elik\AppData\Local\Xamarin\Mono for Android\Keystore\Eli\Eli_NEW.keystore" "C:\Projects\GQ4\bin\Release\net9.0-android\com.GSET.GQ4.apk-Signed.apk" eli_new                              
+keytool -genkey -v -keystore "C:\Projects\GQ4\eli_release.keystore" -alias eli_new -keyalg RSA -keysize 2048 -validity 10000  
+dotnet publish -f net9.0-android -c Release /p:AndroidKeyStore=true /p:AndroidSigningKeyStore="C:\Projects\GQ4\eli_release.keystore" /p:AndroidSigningKeyAlias="eli_new" /p:AndroidSigningKeyPass="eli123" /p:AndroidSigningStorePass="eli123"

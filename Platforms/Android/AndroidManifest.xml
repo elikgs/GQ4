@@ -1,19 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Allow queries for camera capture intents on Android 11+ (package visibility) -->
-    <queries>
-        <!-- Allow resolving camera apps that handle IMAGE_CAPTURE -->
-        <intent>
-            <action android:name="android.media.action.IMAGE_CAPTURE" />
-        </intent>
-        <!-- Common photo apps (optional) -->
-        <package android:name="com.google.android.apps.photos" />
-    </queries>
-
-    <application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true"></application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
-  
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.GSET.GQ4.apk" android:versionCode="1" android:versionName="One">
+	<!-- Allow queries for camera capture intents on Android 11+ (package visibility) -->
+	<queries>
+		<!-- Allow resolving camera apps that handle IMAGE_CAPTURE -->
+		<intent>
+			<action android:name="android.media.action.IMAGE_CAPTURE" />
+		</intent>
+		<!-- Common photo apps (optional) -->
+		<package android:name="com.google.android.apps.photos" />
+	</queries>
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true" android:label="GQ4"></application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera" android:required="false" />
 </manifest>
